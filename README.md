@@ -1,5 +1,5 @@
 **TNPG: Strawberry JAM**
 
-*~Sophia Eiden~* \
+*\~Sophia Eiden\~* \
 *~Melody Lew~* \
 *~Josiah Moltz~*
