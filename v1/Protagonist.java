@@ -1,6 +1,8 @@
 public class Protagonist extends Character{
+
   private String name;
-  private int _health;
+
+  //private int _health;
 
   /*=============================================
     constructor Protagonist() -- sets everything up
@@ -11,8 +13,8 @@ public class Protagonist extends Character{
     name = "Bilbo";
     health = 125;
     strength = 100;
-    atk = 40;
-    def = .4;
+    def = 40;
+    atk = .4;
 
   }
 
@@ -25,8 +27,8 @@ public class Protagonist extends Character{
     name = title;
     health = 125;
     strength = 100;
-    atk = 40;
-    def = .4;
+    def = 40;
+    atk = .4;
   }
 
   /*=============================================

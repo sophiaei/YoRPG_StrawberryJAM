@@ -11,7 +11,13 @@
  * (If you feel other changes are merited, note what and why, so that we may discuss on the 'morrow.)
  *
  * DISCO:
- *
+ * - to get a "private" variable in an inherited class, we need to use "protected"
+    - we tried both setting it to public and moving the variable declaration, but a deep trawl throuhg the API gave us this better METHODS
+  - found out that this() is calling a constructor on itself
+  - inheritables
+    - needs a superclass (parent class)
+    - subclasses can be instantiated with extends __CLASS__ keyword
+    - methods + vars declared in superclass work for subclass
  * QCC:
  *
  **********************************************/

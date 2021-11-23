@@ -1,6 +1,5 @@
 public class Monster extends Character{
 
-
   /*=============================================
     constructor Protagonist( int difficulty ) -- sets everything up
     pre: ints health atk def, double accuracy are all set up
