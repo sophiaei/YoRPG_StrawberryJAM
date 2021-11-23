@@ -2,4 +2,4 @@
 
 *Sophia Eiden* \
 *Melody Lew* \
-*Josiah Moltz* \
+*Josiah Moltz*
