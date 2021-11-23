@@ -13,15 +13,21 @@ public class Character{
     return health > 0;
   }
 
-  public int getDefense{
-    //foo
+  public int getDefense(){
+    return def;
   }
 
   public void lowerHP(int hit){
-
+    health -= hit;
   }
 
-  public void attack(Character char){
-    int dmg = (strength* atk) - char.getDefense()
+  public int attack(Character opponent){
+    int damage = (int)(strength* atk) - opponent.getDefense();
+
+    if (damage > 0) {damage = 0;}
+
+    opponent.lowerHP(damage);
+    return damage;
   }
+
 }

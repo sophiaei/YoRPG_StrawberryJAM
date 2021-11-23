@@ -1,6 +1,5 @@
 public class Monster extends Character{
 
-  private double accuracy;
 
   /*=============================================
     constructor Protagonist( int difficulty ) -- sets everything up
@@ -8,10 +7,10 @@ public class Monster extends Character{
     post: sets heatlh atk def and accuracy to the appropriate values
     =============================================*/
   public Monster() {
-    health = 30;
-    def = 5;
-    atk = 4;
-    accuracy = 0.4;
+    health = 150;
+    strength = 20 + (int)(Math.random()*45);
+    def = 20;
+    atk = 1;
   }
 
   /*=============================================
@@ -23,7 +22,6 @@ public class Monster extends Character{
     health = 30;
     def = 5;
     atk = 4;
-    accuracy = 0.4;
     if (difficulty == 1) {
       //foo easy
     }
@@ -34,7 +32,7 @@ public class Monster extends Character{
       //foo hard
     }
   }
-
+/* ACCESSORS */
   /*=============================================
     int getHealth() -- returns monsters health
     pre:  health is an initialized int
@@ -43,48 +41,20 @@ public class Monster extends Character{
     public int getHealth() {
       return health;
     }
-
-  /*=============================================
-    int attack(Class pat) -- damages the opponent
-    pre: Class pat has damage and ouch methods
-    post: returns and reduces smaug's health by the appropriate manner
-    =============================================*/
-  public int attack(Protagonist pat){
-    int turnAtk = atk * hitOrMiss();
-    pat.damage(turnAtk);
-    return pat.ouch(turnAtk);
-  }
-
-  /*=============================================
-    int ouch(int hit) -- returns damage incurred from a hit
-    pre: hit and def are initialized ints
-    post: returns hit / def
-    =============================================*/
-  public int ouch(int hit) {
-    return hit / def;
-  }
-
-  /*=============================================
-    void damage(int hit) -- applies the damage incurred from a hit
-    pre:  health is an int
-    post: subtracts the appropriate damage from health
-    =============================================*/
-  public void damage(int hit) {
-    health -= ouch( hit );
-  }
+/* ACCESSORS */
 
   /*=============================================
     int hitOrMiss() -- determines whether a hit lands or not
     pre:  accuracy is an initialized double
     post: returns 1 with probability accuracy, and 0 with probability 1-accuracy
     =============================================*/
-  public int hitOrMiss() {
+  /*public int hitOrMiss() {
     if ( Math.random() <= accuracy ) {
       return 1;
     }
     else {
       return 0;
     }
-  }
+  }*/
 
 }
