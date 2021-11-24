@@ -36,18 +36,18 @@ public class YoRPG {
   private Protagonist pat;
   private Monster smaug;
 
-  private int moveCount;
   private boolean gameOver;
   private int difficulty;
 
   private InputStreamReader isr;
   private BufferedReader in;
+
+  private int selection;
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
   // ~~~~~~~~~~ DEFAULT CONSTRUCTOR ~~~~~~~~~~~
   public YoRPG() {
-    moveCount = 0;
     gameOver = false;
     isr = new InputStreamReader( System.in );
     in = new BufferedReader( isr );
@@ -90,8 +90,35 @@ public class YoRPG {
     }
     catch ( IOException e ) { }
 
-    //instantiate the player's character
-    pat = new Protagonist( name );
+    //initiate the player's character
+
+    String t = "";
+    t += "Who would you like to be?\n";
+    t += "=========================\n";
+    t += "0.\tNo one special\n";
+    t += "1.\tHealer\n";
+    t += "2.\tWizard\n";
+    t += "3.\tGod (Unleash your wrath upon this earth)\n";
+    t += "Enter a number to represent your choice ";
+
+    System.out.print( t );
+    try {
+      selection = Integer.parseInt( in.readLine() );
+    }
+    catch ( IOException e ) { }
+
+    if (selection == 0) {
+      pat = new Protagonist(name);
+    }
+    else if (selection == 1) {
+      pat = new Healer(name);
+    }
+    else if (selection == 2) {
+      pat = new Wizard(name);
+    }
+    else if (selection == 3) {
+      pat = new God(name);
+    }
 
   }//end newGame()
 
@@ -111,10 +138,25 @@ public class YoRPG {
     else {
       System.out.println( "\nLo, yonder monster approacheth!" );
 
-      smaug = new Monster();
+      int randomChoice = (int)(Math.random() * 4);
+      if ( randomChoice == 0 ) {
+        smaug = new Monster();
+        System.out.println("You are facing Smaug the Dragon");
+      }
+      else if ( randomChoice == 1 ) {
+        smaug = new Wildcard();
+        System.out.println("You are facing The Joker, WHO KNOWS WHAT HIS NEXT MOVE WILL BE #gaslight #gatekey #girlboss");
+      }
+      else if ( randomChoice == 2 ) {
+        smaug = new Doubler();
+        System.out.println("You are facing Double Trouble the Dastardly Dynamic Duo of Destruction");
+      }
+      else if (randomChoice == 3 ) {
+        smaug = new Quizzer();
+        System.out.println("You are facing Quincy the Duck, the Quacky Quirky Questioning Quizzer");
+      }
 
       while( smaug.isAlive() && pat.isAlive() ) {
-
         // Give user the option of using a special attack:
         // If you land a hit, you incur greater damage,
         // ...but if you get hit, you take more damage.
@@ -138,6 +180,7 @@ public class YoRPG {
 
         System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
                             " for " + d2 + " points of damage.");
+
       }//end while
 
       //option 1: you & the monster perish

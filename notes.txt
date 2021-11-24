@@ -5,3 +5,22 @@
   - needs a superclass (parent class)
   - subclasses can be instantiated with extends __CLASS__ keyword
   - methods + vars declared in superclass work for subclass
+
+Picking archetypes:
+  -Monsters
+    -Wildcard: THE JOKER???
+      -Random chance of hitting you
+    -Doubler (better name later)
+      -Doubles damage the longer they survive
+    -Riddler (maybe)
+    -Anti Healer (maybe)
+    -Reflect-o Change-o
+      -Swaps you and opponents attack/defense
+
+  -Protagonist
+    -Healer
+      -specialized heals instead of damaging other
+    -God
+      -Wins.
+    -Wizard
+      -A little unreliable :P

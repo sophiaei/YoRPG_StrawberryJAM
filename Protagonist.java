@@ -23,7 +23,7 @@ public class Protagonist extends Character{
     pre: String title, ints health atk def, double accuracy
     post: sets name to title, and sets heatlh atk def and accuracy to the appropriate values
     =============================================*/
-  public Protagonist( String title) {
+  public Protagonist(String title) {
     name = title;
     health = 125;
     strength = 100;
@@ -94,7 +94,7 @@ public class Protagonist extends Character{
   public double luck() {
     double luckocity = 4 * Math.random();
     if (luckocity > 2) {
-      luckocity = 2;  //ensures you can't quadruple your atk, no matter how well you think you can spinning thuner kick
+      luckocity = 2;  //ensures you can't quadruple your atk, no matter how well you think you can spinning thunder kick
     }
     return luckocity;
   }

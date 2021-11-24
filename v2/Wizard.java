@@ -1,4 +1,13 @@
 public class Wizard extends Protagonist{
-  // smite, fireball
-  // poison, long term effect (over round lowers strength?)
+  public Wizard() {
+    super();
+  }
+
+  public Wizard(String Title) {
+    super(Title);
+  }
+
+  public void update(Character opponent) {
+    strength = (int)(Math.random() * 20);
+  }
 }

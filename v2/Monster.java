@@ -31,15 +31,7 @@ public class Monster extends Character{
       //foo hard
     }
   }
-/* ACCESSORS */
-  /*=============================================
-    int getHealth() -- returns monsters health
-    pre:  health is an initialized int
-    post: returns players health
-    =============================================*/
-    public int getHealth() {
-      return health;
-    }
+
 /* ACCESSORS */
 
   /*=============================================
