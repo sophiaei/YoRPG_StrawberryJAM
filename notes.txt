@@ -1,0 +1,41 @@
+StrawberryJAM: Melody Lew, Sophia Eiden, Josiah Moltz
+APCS pd06
+L01: An Adventurer is You!
+2021-11-29
+time spent: 8.0 hrs
+
+
+* DISCO:
+ - to get a "private" variable in an inherited class, we need to use "protected"
+   - we tried both setting it to public and moving the variable declaration, but a deep trawl through the API gave us this better METHODS
+ - found out that this() is calling a constructor on itself
+ - inheritables
+   - needs a superclass (parent class)
+   - subclasses can be instantiated with extends __CLASS__ keyword
+   - methods + vars declared in superclass work for subclass
+ - You can redefine methods in subclasses
+
+* QCC:
+- What is static? We had far too many issues such as calling a non-static method in a static context
+- What on earth is wrong with Reflect-O Change-O?? It did not Reflect or Change-O :(
+- Why did the smaug variable not update about()? We ended up having to call the individual monsters in each conditional.
+
+Picking archetypes:
+  -Monsters
+    -Wildcard: THE JOKER???
+      -Random chance of hitting you
+    -Doubler (better name later)
+      -Doubles damage the longer they survive
+    -Riddler (maybe)
+    -Anti Healer (maybe)
+    -Reflect-o Change-o
+      -Swaps you and opponents attack/defense
+
+  -Protagonist
+    -Healer
+      -specialized heals instead of damaging other
+    -God
+      -Wins.
+    -Wizard
+      -A little unreliable :P
+
