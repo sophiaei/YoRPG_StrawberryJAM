@@ -13,7 +13,7 @@ public class Character{
   public boolean isAlive() {
     return health > 0;
   }
-  
+
   /* ACCESSORS */
   /*=============================================
     int getHealth() -- returns monsters health
@@ -60,7 +60,8 @@ public class Character{
     opponent.lowerHP(damage);
 
     reset();
-
+    System.out.println(strength * atk);
+    System.out.println(opponent.getDefense());
     return damage;
   }
 

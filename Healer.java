@@ -21,4 +21,10 @@ public class Healer extends Protagonist {
       health += 50;
     }
   }
+  public void specialize(){
+
+  }
+  public void normalize(){
+
+  }
 }

@@ -21,4 +21,10 @@ public class God extends Protagonist {
     strength = 1000000;
     health = 1000000;
   }
+  public void specialize(){
+    
+  }
+  public void normalize(){
+
+  }
 }

@@ -11,6 +11,12 @@ public class Monster extends Character{
     def = 20;
     atk = 1;
   }
+  public static void about(){
+    System.out.println("Smaug the Snore's health is 150.");
+    System.out.println("Smaug the Snore's strength is 20 plus a boost.");
+    System.out.println("Smaug the Snore's defense is 20.");
+    System.out.println("Smaug the Snore's attack is 1.");
+  }
 
   /*=============================================
     constructor Protagonist( int difficulty ) -- sets everything up

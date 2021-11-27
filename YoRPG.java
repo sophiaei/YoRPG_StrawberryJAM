@@ -142,18 +142,22 @@ public class YoRPG {
       if ( randomChoice == 0 ) {
         smaug = new Monster();
         System.out.println("You are facing Smaug the Dragon");
+        smaug.about();
       }
       else if ( randomChoice == 1 ) {
         smaug = new Wildcard();
         System.out.println("You are facing The Joker, WHO KNOWS WHAT HIS NEXT MOVE WILL BE #gaslight #gatekey #girlboss");
+        Wildcard.about();
       }
       else if ( randomChoice == 2 ) {
         smaug = new Doubler();
         System.out.println("You are facing Double Trouble the Dastardly Dynamic Duo of Destruction");
+        Doubler.about();
       }
       else if (randomChoice == 3 ) {
         smaug = new Quizzer();
         System.out.println("You are facing Quincy the Duck, the Quacky Quirky Questioning Quizzer");
+        Quizzer.about();
       }
 
       while( smaug.isAlive() && pat.isAlive() ) {

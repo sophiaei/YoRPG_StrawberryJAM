@@ -155,6 +155,7 @@ public class YoRPG {
         smaug = new Quizzer();
         System.out.println("You are facing Quincy the Duck, the Quacky Quirky Questioning Quizzer");
       }
+      smaug.about();
 
       while( smaug.isAlive() && pat.isAlive() ) {
         // Give user the option of using a special attack:

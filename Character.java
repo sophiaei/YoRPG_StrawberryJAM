@@ -1,4 +1,5 @@
 public class Character{
+  //HIIIII
   protected int health;
   protected int strength;
   protected int def;
@@ -13,7 +14,7 @@ public class Character{
   public boolean isAlive() {
     return health > 0;
   }
-  
+
   /* ACCESSORS */
   /*=============================================
     int getHealth() -- returns monsters health
