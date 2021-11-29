@@ -55,8 +55,8 @@ public class Protagonist extends Character{
     post: resets atk and def to standard values for a normal attack
     =============================================*/
   public void normalize(){
-    atk = normAtk;
-    def = normDef;
+    atk = 0.4;  //feeling lucky?
+    def = 40;
   }
 
   /*=============================================
@@ -65,15 +65,8 @@ public class Protagonist extends Character{
     post: updates atk to a randomly higher value, and lowers def
     =============================================*/
   public void specialize() {
-    normAtk = atk;
-    normDef = def;
     atk = 0.75;
     def = 20;
-  }
-
-  public void update(Character opponent) {
-    normAtk = atk;
-    normDef = def;
   }
 
   /*=============================================

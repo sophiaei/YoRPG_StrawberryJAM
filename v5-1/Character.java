@@ -3,8 +3,6 @@ public class Character{
   protected int strength;
   protected int def;
   protected double atk;
-  protected double normAtk;
-  protected int normDef;
 
   /*=============================================
     boolean isAlive() -- returns true if player is alive, and false otherwise
@@ -37,18 +35,13 @@ public class Character{
     health -= hit;
   }
 
+  /*=============================================
+    update(Character opponent) will affect how Character's change their attack
+    pre: TBD in subclasses
+    post: TBD in subclasses
+  =============================================*/
   public void update(Character opponent) {
     //to be redefined on an individual basis
-  }
-
-  public void reset() {
-    //to be redefined on an individual basis
-  }
-
-  public void switcheroo(double atkN, int defN, int healthN) {
-    atk = atkN;
-    def = defN;
-    health = healthN;
   }
 
   public int attack(Character opponent) {
@@ -59,8 +52,6 @@ public class Character{
     if (damage < 0) {damage = 0;}
 
     opponent.lowerHP(damage);
-
-    reset();
 
     return damage;
   }

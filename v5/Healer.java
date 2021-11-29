@@ -16,12 +16,13 @@ public class Healer extends Protagonist {
 
   public void specialize() {
     atk = 0;
+    def = 0;
     if (health < 10) {
       health += 50;
     }
   }
-  public void normalize() {
-    atk = 0.4;
-    def = 40;
+  
+  public void normalize(){
+
   }
 }
