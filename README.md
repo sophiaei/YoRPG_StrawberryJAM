@@ -1,7 +1,7 @@
 # Strawberry JAM
 *\~Sophia Eiden\~* \
 *\~Melody Lew\~* \
-*\~Josiah Moltz\~* \
+*\~Josiah Moltz\~*
 
 ## New Classes
 #### Protagonist
