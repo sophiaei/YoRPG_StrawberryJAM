@@ -14,12 +14,17 @@ time spent: 8.0 hrs
    - subclasses can be instantiated with extends __CLASS__ keyword
    - methods + vars declared in superclass work for subclass
  - You can redefine methods in subclasses
+ - In the terminal `.` is self-referencial!! (type ls -a to see it),
+   so typing cp -r path/./ resting/place will copy the *contents* of path/ to resting/place
+   (intertrash assisted)
 
 * QCC:
 - What is static? We had far too many issues such as calling a non-static method in a static context
 - What on earth is wrong with Reflect-O Change-O?? It did not Reflect or Change-O :(
 - Why did the smaug variable not update about()? We ended up having to call the individual monsters in each conditional.
 
+
+Work for picking Archetypes
 Picking archetypes:
   -Monsters
     -Wildcard: THE JOKER???
@@ -38,4 +43,3 @@ Picking archetypes:
       -Wins.
     -Wizard
       -A little unreliable :P
-

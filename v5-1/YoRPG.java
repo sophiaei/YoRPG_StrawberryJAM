@@ -119,6 +119,7 @@ public class YoRPG {
     else if (selection == 3) {
       pat = new God(name);
     }
+
   }//end newGame()
 
 
@@ -133,31 +134,32 @@ public class YoRPG {
     int d1, d2;
 
     if ( Math.random() >= ( difficulty / 3.0 ) )
-      System.out.println( "\nNothing to see here. Move along!" );
+       System.out.println( "\nNothing to see here. Move along!" );
     else {
-      System.out.println( "\nLo, yonder monster approacheth!" );
-
-      int randomChoice = (int)(Math.random() * 4);
-      if ( randomChoice == 0 ) {
-        smaug = new Monster();
-        System.out.println("You are facing Smaug the Dragon");
-        smaug.about();
-      }
-      else if ( randomChoice == 1 ) {
-        smaug = new Wildcard();
-        System.out.println("You are facing The Joker, WHO KNOWS WHAT HIS NEXT MOVE WILL BE #gaslight #gatekey #girlboss");
-        Wildcard.about();
-      }
-      else if ( randomChoice == 2 ) {
-        smaug = new Doubler();
-        System.out.println("You are facing Double Trouble the Dastardly Dynamic Duo of Destruction");
-        Doubler.about();
-      }
-      else if (randomChoice == 3 ) {
-        smaug = new Quizzer();
-        System.out.println("You are facing Quincy the Duck, the Quacky Quirky Questioning Quizzer");
-        Quizzer.about();
-      }
+    //   System.out.println( "\nLo, yonder monster approacheth!" );
+    //
+    //   int randomChoice = (int)(Math.random() * 4);
+    //   if ( randomChoice == 0 ) {
+    //     smaug = new Monster();
+    //     System.out.println("You are facing Smaug the Dragon");
+    //     smaug.about();
+    //   }
+    //   else if ( randomChoice == 1 ) {
+    //     smaug = new Wildcard();
+    //     System.out.println("You are facing The Joker, WHO KNOWS WHAT HIS NEXT MOVE WILL BE #gaslight #gatekey #girlboss");
+    //     Wildcard.about();
+    //   }
+    //   else if ( randomChoice == 2 ) {
+    //     smaug = new Doubler();
+    //     System.out.println("You are facing Double Trouble the Dastardly Dynamic Duo of Destruction");
+    //     Doubler.about();
+    //   }
+    //   else if (randomChoice == 3 ) {
+    //     smaug = new Quizzer();
+    //     System.out.println("You are facing Quincy the Duck, the Quacky Quirky Questioning Quizzer");
+    //     Quizzer.about();
+    //   }
+    smaug = new ReflectOChangeO();
 
       while( smaug.isAlive() && pat.isAlive() ) {
         // Give user the option of using a special attack:
