@@ -17,6 +17,7 @@ time spent: 8.0 hrs
  - In the terminal `.` is self-referencial!! (type ls -a to see it),
    so typing cp -r path/./ resting/place will copy the *contents* of path/ to resting/place
    (intertrash assisted)
+   can also do git add ./
 
 * QCC:
 - What is static? We had far too many issues such as calling a non-static method in a static context
